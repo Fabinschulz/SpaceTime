@@ -6,15 +6,65 @@ Everything about outer space, bringing its mysteries, news and entertainment.
 
 - [SingIn](src/assets/images/viewLogin.png)
 
-# Getting Started with Create React App
+## Introduction
+After cloning the project, do this:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- npm install.
+- npm run start.
+
+## Folder Structure
+
+After creation, your project should look like this:
+
+```
+my-app/
+  README.md
+  node_modules/
+  package.json
+  public/
+    index.html
+    favicon.ico
+ SRC/
+├── _TESTS_
+|    └──The final folder in this structure is for all your test code. Generally on smaller projects like this I find that people tend to store all their tests in one folder (that is if they write any tests at all). Overall, I think this is fine for smaller projects, but again this is something I would change as your project grows in size.
+├── ASSETS
+|    └──The assets folder contains all images, css files, font files, etc. for your project. Pretty much anything that isn't code related will be stored in this folder.
+├── COMPONENTS
+|    └── A ui folder that contains all our UI components like buttons, modals, cards, etc. You can customize and breakdown this components folder however you see fit based on your project needs, but
+|    ideally this folder shouldn't get too large as many of your more complex components will be stored in the pages folder.
+├── PAGES
+|   └── The files in the pages folder indicate the route of the react application. Each file in this folder contains its route. A page can contain its subfolder. Each page has its state and is usually used to call an async operation. It usually consists of various components grouped.
+├── SERVICE
+|    └── Endpoints, Api.
+|
+| App.css
+| App.tsx
+| App.test.ts
+| index.css
+| index.tsx
+```
+
+For the project to build, **these files must exist with exact filenames**:
+
+- `public/index.html` is the page template;
+- `src/index.tsx` is the JavaScript entry point.
+
+You can delete or rename the other files.
+
+You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>
+You need to **put any JS, TS and CSS files inside `src`**, or Webpack won’t see them.
+
+Only files inside `public` can be used from `public/index.html`.<br>
+Read instructions below for using assets from JavaScript and HTML.
+
+You can, however, create more top-level directories.<br>
+They will not be included in the production build so you can use them for things like documentation.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start` ||  `npm run start`
+### `npm start` or `npm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
