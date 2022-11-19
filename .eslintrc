@@ -1,0 +1,36 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-undef": [
+            1
+        ],
+        "indent": [
+            "error",
+            "tab",
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-dupe-keys": [
+            1
+        ]
+    },
+    "globals": {
+        "JSX": "readonly",
+        "IMFAState": "readonly"
+    },
+    "env": {
+        "browser": true,
+        "amd": true,
+        "es6": true,
+        "node": true
+    }
+}
