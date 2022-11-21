@@ -79,7 +79,7 @@ function Select({ options, control, required = false, loading = false, disabled 
 							disabled={disabled}
 							value={value ? value : (field.value === undefined || field.value === null) ? "" : field.value}
 							defaultValue={defaultValue}
-							component={TextField}
+							//component={TextField}
 							disableUnderline
 							style={{ backgroundColor: 'white', borderRadius: 10, height: 48, padding: 10, border: errors && errors.message ? '1px solid red' : '' }}
 							classes={{ root: classes.selectRoot }}
